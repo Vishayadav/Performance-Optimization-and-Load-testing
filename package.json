@@ -1,0 +1,14 @@
+{
+  "name": "week4-performance-optimization",
+  "version": "1.0.0",
+  "description": "Before-and-after API performance optimization and load testing exercise",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "seed": "node scripts/seed.js",
+    "bench": "node scripts/load-test.js",
+    "bench:before": "node scripts/load-test.js --mode=before",
+    "bench:after": "node scripts/load-test.js --mode=after"
+  },
+  "dependencies": { "express": "^4.21.2", "better-sqlite3": "^11.8.1" }
+}
